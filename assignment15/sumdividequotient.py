@@ -1,0 +1,6 @@
+var1 = int(input("enter a number\n"))
+var2 = int(input("enter another number\n"))
+print(f"sum of {var1} and {var2} is {var1+var2}")
+print(f"difference of {var1} and {var2} is {var1-var2}")
+print(f"Product of {var1} and {var2} is {var1*var2}")
+print(f"quotient of {var1} and {var2} is {var1/var2}")

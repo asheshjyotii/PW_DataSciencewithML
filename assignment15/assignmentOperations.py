@@ -1,0 +1,18 @@
+var1 = int(input("Enter the number 1...\n"))
+var2 = int(input("Enter the number 2...\n"))
+print("There are total 13 assignment operations that can be performed in python...\n")
+print(f"The '+=' operator .... can add two inputs {var1}+{var2}={var1+var2}\n")
+print(f"The '-=' operator .... can find the difference between two inputs {var1}-{var2}={var1-var2}\n")
+print(f"The '*=' operator .... can find the product between two inputs{ var1}*{var2}={var1*var2}\n")
+print(f"The '/=' operator .... can find the quotient between two inputs when they are divided  {var1}/{var2}={var1/var2}\n")
+print(f"The '%=' operator .... can find the remainder between two inputs when they are divided  {var1}%{var2}={var1%var2}\n")
+print(f"The '//=' operator .... can find the floor division between two inputs {var1}//{var2}={var1//var2}\n")
+print(f"The '**=' operator .... can find the answer to {var1} to the power {var2}={var1**var2}\n")
+print(f"The '&=' operator .... can perform bitwise and operation {var1} & {var2}={var1&var2}\n")
+print(f"The '|=' operator .... can perform bitwise or operation {var1} | {var2}={var1|var2}\n")
+print(f"The '^=' operator .... can perform bitwise xor operation {var1} ^ {var2}={var1^var2}\n")
+print(f"The '>>=' operator .... can perform bitwise right shift operation {var1} >> {var2}={var1>>var2}\n")
+print(f"The '<<=' operator .... can perform bitwise left shift operation {var1} << {var2}={var1<<var2}\n")
+var1 = var2
+var2 = var1
+print(f"The '=' operator .... can turn your two inputs equal{var1} = {var2} therefore var1 = {var1} and var2 = {var2} ")
