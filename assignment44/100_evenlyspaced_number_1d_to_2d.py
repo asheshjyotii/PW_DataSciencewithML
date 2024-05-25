@@ -2,6 +2,7 @@ import numpy as np
 array = np.linspace(1, 10, 100).reshape(10, 10)
 print("2D Array:", array)
 '''
+Output: 
 $ python3 100_evenlyspaced_number_2d_3d.py
 2D Array: [[ 1.          1.09090909  1.18181818  1.27272727  1.36363636  1.45454545
    1.54545455  1.63636364  1.72727273  1.81818182]
