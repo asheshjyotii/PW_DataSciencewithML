@@ -1,3 +1,4 @@
+#%%
 import seaborn as sea
 
 x = sea.get_dataset_names()
@@ -18,5 +19,11 @@ numeric_data_filter = df.select_dtypes(include=["float64","int64"]) # this selec
 print(numeric_data_filter)
 
 
-covariance_seaborn = numeric_data_filter.cov()# finds the covariance
-print(covariance_seaborn)
+covariance_seaborn_pdframe = numeric_data_filter.cov()# finds the covariance
+print(covariance_seaborn_pdframe)
+#%%
+
+#generating heatmap using seaborn of the covariance
+
+sea.heatmap(covariance_seaborn_pdframe,annot= True)
+# %%
