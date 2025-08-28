@@ -1,0 +1,127 @@
+Every HTML file has this basic structure:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page</title>
+</head>
+<body>
+  <!-- Page content goes here -->
+</body>
+</html>
+
+
+<!DOCTYPE html> → tells the browser: “Hey, this is HTML5”.
+
+<html> ... </html> → wraps the whole page.
+
+<head> ... </head> → settings (title, CSS link, scripts).
+
+<body> ... </body> → everything you see on the page.
+
+🔹 Step 3: Adding the Calculator Content
+
+Inside <body>, we want:
+
+A title → "Calculator"
+
+A label → "Choose a Mathematical Operation"
+
+A dropdown menu → add, subtract, multiply, divide, log
+
+Two text boxes → for numbers
+
+A button → "Calculate"
+
+Here’s how it looks in HTML:
+
+<body>
+  <h1>Calculator</h1>
+
+  <label for="operation">Choose a Mathematical Operation </label>
+
+  <select id="operation">
+    <option value="add">add</option>
+    <option value="subtract">subtract</option>
+    <option value="multiply">multiply</option>
+    <option value="divide">divide</option>
+    <option value="log">log</option>
+  </select>
+
+  <input type="text" id="num1">
+  <input type="text" id="num2">
+
+  <button>Calculate</button>
+</body>
+
+
+👉 Explanation:
+
+<h1> = heading (big text).
+
+<label> = descriptive text for an input.
+
+<select> = dropdown menu.
+
+<option> = items inside dropdown.
+
+<input type="text"> = textbox.
+
+<button> = clickable button.
+
+🔹 Step 4: What is CSS?
+
+CSS = Cascading Style Sheets.
+It’s used to make HTML look pretty.
+
+For example:
+
+body {
+  background-color: yellow;   /* page background */
+}
+
+h1 {
+  color: black;               /* heading text color */
+  text-align: center;         /* center align */
+}
+
+🔹 Step 5: Styling Our Calculator
+
+We want:
+
+Yellow-green background
+
+Centered heading
+
+Nice spacing for inputs
+
+So we create a file style.css:
+
+body {
+  background-color: #cddc39;   /* Yellow-green background */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;          /* Center the heading */
+  font-size: 28px;
+}
+
+label {
+  font-size: 18px;
+}
+
+select, input, button {
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+}
+
+🔹 Step 6: Connecting HTML + CSS
+
+In the <head> of your HTML, add:
+
+<link rel="stylesheet" href="style.css">
+
+
+This tells the browser: “Hey, go load my CSS file”.
